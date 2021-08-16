@@ -1,0 +1,18 @@
+body
+{
+background-color: rgb(143, 129, 189);
+
+}
+
+.heading{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+ font-size: 25px; 
+border-style:double groove ridge dotted;
+border-color: rgb(243, 176, 52);
+}
+
+#camera{
+box-shadow:6px 6px 100px rgb(248, 196, 171);
+width: 350px;
+height: 350px;
+}
