@@ -22,3 +22,20 @@ Webcam.set({
     function modelloaded(){
         console.log("modelloaded")
     }
+
+    function cheak(){
+        img=document.getElementById("capture");
+        classifier.classify(img,got_result)
+        }
+        function got_result(error,results){
+        if(error){
+        console.log(error);}
+        else{
+        console.log(results)
+        label=results[0].label;
+        confidence=results[0].confidence.toFixed(3);
+        document.getElementById("result_object_name").innerHTML=label;
+        document.getElementById("result_object_accuracy").innerHTML=confidence;
+        }
+        
+        }
